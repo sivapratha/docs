@@ -1,3 +1,9 @@
+
+Today I’ll start with a quick overview of our integration platform using SnapLogic and how it fits into our data processing flow.
+Then I’ll walk through the main data load pipelines we currently have, including participant routing, incremental loads, and the one-time historical data load that we are currently running for the 21-month dataset.
+After that, I’ll briefly cover the enhancement we’re implementing for encrypted incremental loads.
+Finally, I’ll explain how the connectivity is configured, including the JDBC connections for database access, Kafka connections for event publishing, and how authentication is handled using access keys and tokens.
+
 SnapLogic Overview (10-Minute Team Session)
 1. What is SnapLogic?
 SnapLogic is an Integration Platform as a Service (iPaaS) used to connect applications, databases, APIs, and data sources.
