@@ -1,0 +1,38 @@
+SnapLogic Overview (10-Minute Team Session)
+1. What is SnapLogic?
+SnapLogic is an Integration Platform as a Service (iPaaS) used to connect applications, databases, APIs, and data sources.
+It enables organizations to move and transform data between systems using a low‑code visual interface instead of heavy custom coding.
+Example integrations include: Database → Transformation → API, Kafka → Transformation → Data Warehouse, File → Processing → Application.
+2. Core Concepts
+Pipeline: A workflow that defines how data flows from a source to a destination.
+Snaps: Prebuilt connectors that perform actions like reading data, transforming it, or writing it to another system.
+Examples of snaps include Database Snaps, REST Snaps, File Readers, Mapper, and Kafka Producer.
+Snap Packs: Collections of snaps designed to integrate with specific systems such as Kafka, Snowflake, REST APIs, or S3.
+3. Architecture Overview
+Designer: The web-based interface where pipelines are visually designed.
+Manager: Used for monitoring pipelines, managing assets, and scheduling executions.
+Groundplex: The execution environment where pipelines actually run and process data.
+Types of execution environments include Cloudplex (SnapLogic cloud) and Groundplex (runs within the organization’s infrastructure).
+4. Data Processing Flow
+Step 1: Data is read from a source such as a database, API, file, or messaging system.
+Step 2: Data is transformed using components like Mapper, Filter, Join, or Aggregator.
+Step 3: Processed data is delivered to a destination such as Kafka, a database, a REST API, or a data lake.
+SnapLogic processes data as document streams, typically JSON-like objects flowing through the pipeline.
+5. Why Organizations Use SnapLogic
+Low-code development for faster integration.
+Prebuilt connectors reduce development effort.
+Scalable processing for large volumes of data.
+Supports both cloud and hybrid integration architectures.
+6. Our Team Use Case
+In our system, SnapLogic retrieves transaction data from upstream systems.
+The data is transformed into a standardized fraud transaction object.
+The processed data is then published to Kafka topics for downstream consumers.
+These consumers may include fraud detection services, analytics systems, or reporting platforms.
+7. Monitoring and Error Handling
+SnapLogic provides pipeline monitoring, logging, and execution visibility.
+Error handling can be implemented using error pipelines, retries, and alert mechanisms.
+This helps ensure reliability when processing high volumes of transactions.
+8. Summary
+SnapLogic enables scalable integration pipelines using visual workflows.
+It simplifies connecting systems, transforming data, and delivering information to downstream applications.
+The platform supports rapid development while maintaining scalability and operational visibility.
